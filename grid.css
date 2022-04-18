@@ -1,0 +1,335 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 50px 0px;
+    grid-template-areas:
+      "FF FS FT"
+      "SF SS ST"
+      "TF TS TT"
+      "FOF FOS FOT"
+      "FIF FIS FIT"
+      "SIF SIS SIT"
+      "SEF SES SET";
+    font-size: 14px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .FF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFF NFF PFF"
+      "NFF NFF PFF";
+    grid-area: FF;
+  }
+  
+  .PFF { grid-area: PFF; }
+  
+  .NFF { grid-area: NFF; }
+  
+  .FS {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFS NFS PFS"
+      "NFS NFS PFS";
+    grid-area: FS;
+  }
+  
+  .PFS { grid-area: PFS; }
+  
+  .NFS { grid-area: NFS; }
+  
+  .FT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFT NFT PFT"
+      "NFT NFT PFT";
+    grid-area: FT;
+  }
+  
+  .PFT { grid-area: PFT; }
+  
+  .NFT { grid-area: NFT; }
+  
+  .SF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSF NSF PSF"
+      "NSF NSF PSF";
+    grid-area: SF;
+  }
+  
+  .PSF { grid-area: PSF; }
+  
+  .NSF { grid-area: NSF; }
+  
+  .SS {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSS NSS PSS"
+      "NSS NSS PSS";
+    grid-area: SS;
+  }
+  
+  .PSS { grid-area: PSS; }
+  
+  .NSS { grid-area: NSS; }
+  
+  .ST {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NST NST PST"
+      "NST NST PST";
+    grid-area: ST;
+  }
+  
+  .PST { grid-area: PST; }
+  
+  .NST { grid-area: NST; }
+  
+  .TF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NTF NTF PTF"
+      "NTF NTF PTF";
+    grid-area: TF;
+  }
+  
+  .PTF { grid-area: PTF; }
+  
+  .NTF { grid-area: NTF; }
+  
+  .TS {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NTS NTS PTS"
+      "NTS NTS PTS";
+    grid-area: TS;
+  }
+  
+  .PTS { grid-area: PTS; }
+  
+  .NTS { grid-area: NTS; }
+  
+  .TT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NTT NTT PTT"
+      "NTT NTT PTT";
+    grid-area: TT;
+  }
+  
+  .PTT { grid-area: PTT; }
+  
+  .NTT { grid-area: NTT; }
+  
+  .FOF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFOF NFOF PFOF"
+      "NFOF NFOF PFOF";
+    grid-area: FOF;
+  }
+  
+  .PFOF { grid-area: PFOF; }
+  
+  .NFOF { grid-area: NFOF; }
+  
+  .FOS {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFOS NFOS PFOS"
+      "NFOS NFOS PFOS";
+    grid-area: FOS;
+  }
+  
+  .PFOS { grid-area: PFOS; }
+  
+  .NFOS { grid-area: NFOS; }
+  
+  .FOT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFOT NFOT PFOT"
+      "NFOT NFOT PFOT";
+    grid-area: FOT;
+  }
+  
+  .PFOT { grid-area: PFOT; }
+  
+  .NFOT { grid-area: NFOT; }
+  
+  .FIF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFIF NFIF PFIF"
+      "NFIF NFIF PFIF";
+    grid-area: FIF;
+  }
+  
+  .PFIF { grid-area: PFIF; }
+  
+  .NFIF { grid-area: NFIF; }
+  
+  .FIS {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFIS NFIS PFIS"
+      "NFIS NFIS PFIS";
+    grid-area: FIS;
+  }
+  
+  .PFIS { grid-area: PFIS; }
+  
+  .NFIS { grid-area: NFIS; }
+  
+  .FIT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NFIT NFIT PFIT"
+      "NFIT NFIT PFIT";
+    grid-area: FIT;
+  }
+  
+  .PFIT { grid-area: PFIT; }
+  
+  .NFIT { grid-area: NFIT; }
+  
+  .SIF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSIF NSIF PSIF"
+      "NSIF NSIF PSIF";
+    grid-area: SIF;
+  }
+  
+  .PSIF { grid-area: PSIF; }
+  
+  .NSIF { grid-area: NSIF; }
+  
+  .SIS {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSIS NSIS PSIS"
+      "NSIS NSIS PSIS";
+    grid-area: SIS;
+  }
+  
+  .PSIS { grid-area: PSIS; }
+  
+  .NSIS { grid-area: NSIS; }
+  
+  .SIT {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSIT NSIT PSIT"
+      "NSIT NSIT PSIT";
+    grid-area: SIT;
+  }
+  
+  .PSIT { grid-area: PSIT; }
+  
+  .NSIT { grid-area: NSIT; }
+  
+  .SEF {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSEF NSEF PSEF"
+      "NSEF NSEF PSEF";
+    grid-area: SEF;
+  }
+  
+  .PSEF { grid-area: PSEF; }
+  
+  .NSEF { grid-area: NSEF; }
+  
+  .SES {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSES NSES PSES"
+      "NSES NSES PSES";
+    grid-area: SES;
+  }
+  
+  .PSES { grid-area: PSES; }
+  
+  .NSES { grid-area: NSES; }
+  
+  .SET {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "NSET NSET PSET"
+      "NSET NSET PSET";
+    grid-area: SET;
+  }
+  
+  .PSET { grid-area: PSET; }
+  
+  .NSET { grid-area: NSET; }
+  
